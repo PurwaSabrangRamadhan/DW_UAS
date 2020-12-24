@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Progress bar loading -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/pace/pace.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/pace/pace.css">
+  <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Selamat Datang di DEV">
+  <meta name="author" content="">
+
+  <title>
+    Article - Dev
+  </title>
+
+  <link rel="icon" href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/img/favicon/rat.png">
+
+  <!-- Custom fonts -->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap styles -->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate on Scroll Plugin -->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/aos/aos.min.css" rel="stylesheet">
+
+  <!-- Custom styles for ALL page-->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/css/index.css" rel="stylesheet">
+
+  <!-- Custom styles for THIS page-->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/css/pages/main_page.css" rel="stylesheet">
+
+  <!-- NOTE: ALL SCRIPT MOVE HERE FROM BOTTOM -->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Typed.js Plugin -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/typed/typed.min.js"></script>
+
+  <!-- Animate on Scroll Plugin -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/aos/aos.min.js"></script>
+
+</head>
+
+<body class="p-0" id="page-top">
+
+	<div class="d-none">
+		<h2 style="color: red; text-align: center;">
+			Website ini menggunakan CDN, harap sambungkan ke internet atau server CDN sedang down.
+		</h2>
+	</div>
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" style="display: none;" class="d-block">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column bg-white overflow-hidden">
+
+      <!-- Main Content -->
+      <div id="content">
+
+		<!-- Topbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white topbar h-auto container mb-md-5 pb-md-5">
+		  <div class="">
+		    <a class="navbar-brand d-flex mr-auto text-primary" href="../index.html">
+		      <span class="font-weight-bold mx-1">
+		        <i class="fas fa-code"></i> DEV - Article
+		      </span>
+		    </a>
+		  </div>
+
+		  <div class="topbar-divider d-none d-lg-block"></div>
+
+		  <div class="navbar-text">
+		    
+		    <button class="btn btn-link btn-sm d-lg-none rounded-circle" type="button" data-toggle="collapse" data-target="#navToggler1" aria-controls="navToggler1" aria-expanded="false" aria-label="Toggle navigation">
+		      <i class="fa fa-bars"></i>
+		    </button>
+		  </div>
+
+		  <div class="collapse navbar-collapse" id="navToggler1">
+		    <hr class="d-lg-none m-0">
+		    <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+		      <li class="nav-item p-1 p-lg-0 dropdown">
+		        <a class="btn btn-link text-decoration-none mr-1 btn-sm dropdown-toggle" href="#" id="menu_about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <i class="fas fa-rocket"></i> Apps
+		        </a>
+		        <div class="dropdown-menu keep-open dropdown-menu-right animated--grow-in shadow-sm ml-2 ml-lg-0" aria-labelledby="menu_about">
+		          <a class="dropdown-item" href="app_siup.html">Si UP</a>
+		          <a class="dropdown-item" href="app_waqc.html">WhatsApp Quick Chat</a>
+		        </div>
+		      </li>
+		      <li class="nav-item p-1 p-lg-0">
+		        <a href="doc.html" class="">
+		          <button class="btn btn-link text-decoration-none mr-1 btn-sm" type="button">
+		            <i class="fas fa-book"></i> Documentation
+		          </button>
+		        </a>
+		      </li>
+		      <li class="nav-item p-1 p-lg-0">
+		        <a href="article.html" class="">
+		          <button class="btn btn-link text-decoration-none mr-1 btn-sm" type="button">
+		            <i class="fas fa-newspaper"></i> Article
+		          </button>
+		        </a>
+		      </li>
+		    </ul>
+		  </div>
+
+		</nav>
+
+		<!-- End of Topbar -->
+
+        <div id="place_load" class="container pt-3">
+        	<div class="row">
+          		<div class="col-12 col-md-6">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-row">
+			          			<div class="ph-col-6 big"></div>
+			          			<div class="ph-col-6 big empty"></div>
+			          			<div class="ph-col-4 big"></div>
+			          			<div class="ph-col-8 big empty"></div>
+			          		</div>
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          		<div class="col-12 col-md-6">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+          					<div class="ph-row d-none d-md-block">
+			          			<div class="ph-col-12 big empty"></div>
+			          			<div class="ph-col-12 big empty"></div>
+			          		</div>
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          	</div>
+          	<div class="row d-none d-md-flex">
+          		<div class="col-12 col-md-4">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          		<div class="col-12 col-md-4">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          		<div class="col-12 col-md-4">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          	</div>
+        </div>
+
+        <div id="main_content" style="visibility: hidden;">
+        	<section id="secHeader" class="my-3">
+        		<div class="container">
+        			<div class="row align-items-center">
+	          			<div class="col-12 col-md-6 order-md-2 text-center" data-aos="fade-left" data-aos-delay="100">
+	          				<img class="img-fluid" width="250" src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/img/undraw-svg/dev_activity.svg" alt="Documentation illustration">
+	          			</div>
+	          			<div class="col-12 col-md-6 text-center mt-4 mt-md-0" data-aos="fade-right">
+	          				<h1 class="h2 text-md-left pt-3 pt-md-0">
+	          					Cara Upload Program Ke Github Dengan Git di Windows
+	          				</h1>
+	          				<p class="lead text-muted text-md-left">Dengan bantuan github, kami bisa mengakses repository atau program kamu dimana saja selama terhubung ke internet.
+	          				</p>
+	          			</div>
+	          		</div>
+        		</div>
+          	</section>
+
+          	<section id="secDesc" class="my-5 py-5 bg-gradient-light-custom">
+          		<div class="container">
+          			<div class="row justify-content-center" data-aos="fade-down">
+          				<div class="col-12 col-md-8">
+          					<div class="card rounded shadow-sm">
+							  <div class="card-body">
+							  	Apa kamu punya banyak program di komputer kamu dan hanya menyimpannya di
+								localhost? Bagaimana jika kamu ingin mengaksesnya dari luar komputer kamu,
+								dengan komputer kampus misalnya? Ribet kan? Nah kali ini Nyrat.ID akan
+								mengajarkan kamu cara upload program kamu ke website yang namanya
+								<a href="http://github.com">GitHub</a>.
+								<div><br /></div>
+								<div>
+								  Dengan bantuan github, kami bisa mengakses repository atau program kamu dimana
+								  saja selama terhubung ke internet. Kamu juga bisa menemukan berbagai macam
+								  source code program terkenal yang memiliki lisensi terbuka (Open Source)
+								  seperti <a href="https://github.com/torvalds/linux">Linux</a>,
+								  <a href="https://github.com/aosp-mirror">Android</a>, dan banyak lagi. Kalau
+								  kamu mengupload program kamu keisni, kamu bisa mengajak temanmu atau bahkan
+								  orang lain untuk bekerja sama membangun program. Caranya uploadnya gimana?
+								  yuk, langsung ke tutorialnya...
+								</div>
+								<h2 style="text-align: left;">Download Git</h2>
+								<div>
+								  Apa itu git? Git adalah program dasar dari github, dengan git kamu bisa
+								  mengendalikan dan memanajemen versi dari program kamu. Kamu bisa
+								  mendownloadnya di situs resminya
+								</div>
+								<div>
+								  <blockquote><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></blockquote>
+								</div>
+								<div>
+								  Setelah itu, kamu bisa memilih dan menginstallnya sesuai dengan sistem operasi
+								  yang kamu gunakan. Pada tutorial kali ini, kita akan menginstallnya di windows
+								</div>
+								<h2 style="text-align: left;">Buat Akun Github</h2>
+								<div>
+								  Sebelum membuat repository baru di github, kamu perlu buat akun dulu dengan
+								  cara mengisi form registrasi seperti username, email dan sebagainya. Kamu bisa
+								  mendaftar di website resminya atau pada link dibawah
+								</div>
+								<div>
+								  <a href="https://github.com/join"><blockquote>https://github.com/join</blockquote></a>
+								</div>
+								<br id="iklan1" />
+								<h2 style="text-align: left;">Buat Repository</h2>
+								<div>
+								  Setelah berhasil registrasi dan login ke akun github, kamu bisa membuat
+								  repository baru dengan mengkik tombol new di dasbor bagian kiri
+								</div>
+								<div>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a href="https://lh3.googleusercontent.com/-b-XuM0r12eM/X40XI2xxRmI/AAAAAAAAxfs/ql6Kq8QDuZwCeryGAH-Nov8rhdZS887zQCLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="klik tombol new untuk membuat repository baru" data-original-height="405" data-original-width="405" height="320" src="https://lh3.googleusercontent.com/-b-XuM0r12eM/X40XI2xxRmI/AAAAAAAAxfs/ql6Kq8QDuZwCeryGAH-Nov8rhdZS887zQCLcBGAsYHQ/w320-h320/image.png" width="320" /></a>
+								  </div>
+								  Setelah itu kamu bisa mengisi
+								</div>
+								<div>
+								  <ul style="text-align: left;">
+								    <li>Nama repository</li>
+								    <li>Deskripsi repository (opsional)</li>
+								    <li>Memilih apakah repository kamu bersifat&nbsp;</li>
+								    <ul>
+								      <li>public (dapat dilihat siapa saja) atau</li>
+								      <li>private (hanya akun kamu yang bisa melihatnya)</li>
+								    </ul>
+								    <li>
+								      Menambahkan file readme.md, file ini biasanya digunakan sebagai panduan
+								      atau dokumentasi jika ada yang ingin menggunakan program kamu.
+								    </li>
+								    <li>
+								      Menambahkan file .gitignore yang berfungsi untuk memilih file yang tidak
+								      ingin dilacak
+								    </li>
+								    <li>Menambahkan lisensi ke program kamu</li>
+								  </ul>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a href="https://lh3.googleusercontent.com/-UeR_uS28s5I/X40ZFewo1oI/AAAAAAAAxgA/2DkALE3-VcACz4PwJ2Y3gt_kPYS8eNoFgCLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="Isi form untuk membuat repository baru" data-original-height="734" data-original-width="787" height="374" src="https://lh3.googleusercontent.com/-UeR_uS28s5I/X40ZFewo1oI/AAAAAAAAxgA/2DkALE3-VcACz4PwJ2Y3gt_kPYS8eNoFgCLcBGAsYHQ/w400-h374/image.png" width="400" /></a>
+								  </div>
+								  Setelah di isi, klik "create repository".
+								</div>
+								<h2 style="text-align: left;">Inisialisasi Git</h2>
+								<div>
+								  Setelah berhasil menginstall git pada langkap pertama, selanjutnya
+								  inisialisasikan program kamu dengan cara
+								</div>
+								<div>
+								  <ul style="text-align: left;">
+								    <li>Masuk ke folder program kamu</li>
+								    <li>
+								      Klik kanan dibagian kosong dan pilih "Git Bash here", selain itu kamu juga
+								      bisa menggunakan git GUI, tapi di tutorial kali ini kita akan menggunakan
+								      git bash saja agar terbiasa dengan perintah command line<br />
+								      <div class="separator" style="clear: both; text-align: center;">
+								        <a href="https://lh3.googleusercontent.com/-rflfKGYYoPk/X40cGdnKkEI/AAAAAAAAxgM/smNSplSdPmU2k8GnYX3gifsFMxLSvEqvACLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="Klik git bash here untuk membuka terminal" data-original-height="505" data-original-width="716" height="283" src="https://lh3.googleusercontent.com/-rflfKGYYoPk/X40cGdnKkEI/AAAAAAAAxgM/smNSplSdPmU2k8GnYX3gifsFMxLSvEqvACLcBGAsYHQ/w400-h283/image.png" width="400" /></a>
+								      </div>
+								    </li>
+								    <li>
+								      <div class="separator" style="clear: both; text-align: left;">
+								        Setelah itu akan muncul terminal baru dan masukkan perintah<br />
+								        <blockquote>git init</blockquote>
+								        <p>dan akan muncul forder baru bernama .git<br /></p>
+								        <div class="separator" style="clear: both; text-align: center;">
+								          <a href="https://lh3.googleusercontent.com/-KPXDvR6VPHc/X40dBNSTyGI/AAAAAAAAxgU/gjymswgjp0MzmkSmKd6sftPreGCg_IFLgCLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="masukkan perintah git init" data-original-height="337" data-original-width="767" height="176" src="https://lh3.googleusercontent.com/-KPXDvR6VPHc/X40dBNSTyGI/AAAAAAAAxgU/gjymswgjp0MzmkSmKd6sftPreGCg_IFLgCLcBGAsYHQ/w400-h176/image.png" width="400" /></a>
+								        </div>
+								      </div>
+								    </li>
+								  </ul>
+								  <br id="iklan2" />
+								  <h2 style="text-align: left;">Push Repository</h2>
+								</div>
+								<div>
+								  Setelah berhasil inisialisasi pada program kamu, selanjutnya masukkan perintah
+								  dibawah untuk memasukkan semua file program kamu beserta foldernya ke dalam
+								  track
+								</div>
+								<div><blockquote>git add .</blockquote></div>
+								<div>atau</div>
+								<blockquote><div>git add *</div></blockquote>
+								<p>Setelah itu, commit program yang telah kamu add dengan perintah</p>
+								<blockquote><p>git commit -m "commit pertama"</p></blockquote>
+								<p>Pada bagian "commit pertama" dapat kamu ubah sesuai dengan yang kamu mau</p>
+								<div class="separator" style="clear: both; text-align: center;">
+								  <a href="https://lh3.googleusercontent.com/-Tlm2T69oro0/X40fys2GPXI/AAAAAAAAxgg/73CeLLXGJtcuXGmLZnf_f5YSxBT65CyfwCLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="commit program" data-original-height="131" data-original-width="747" height="70" src="https://lh3.googleusercontent.com/-Tlm2T69oro0/X40fys2GPXI/AAAAAAAAxgg/73CeLLXGJtcuXGmLZnf_f5YSxBT65CyfwCLcBGAsYHQ/w400-h70/image.png" width="400" /></a>
+								</div>
+								<p></p>
+								<p>Selanjutnya ketikkan perintah dibawah untuk mengubah ke branch main</p>
+								<p></p>
+								<blockquote>git branch -M main</blockquote>
+								<p>
+								  Lalu masukkan perintah dibawah sesuai dengan username dan repository yang kamu
+								  buat
+								</p>
+								<blockquote>
+								  <p>
+								    git remote add origin https://github.com/[username github]/[nama
+								    repository].git
+								  </p>
+								</blockquote>
+								<p>contoh</p>
+								<blockquote>
+								  <p>
+								    git remote add origin https://github.com/PurwaSabrangRamadhan/tugas2.git
+								  </p>
+								</blockquote>
+								<p>setelah selesai, push program kamu dengan perintah</p>
+								<blockquote><p>git push -u origin main</p></blockquote>
+								<p>
+								  Saat pertama kali kamu mengupload program maka akan muncul login page github,
+								  pastikan kamu login dengan akun yang sama saat membuat repository.
+								</p>
+								<p></p>
+								<div class="separator" style="clear: both; text-align: center;">
+								  <a href="https://lh3.googleusercontent.com/-9dgkaN8grKs/X40kOBd0VzI/AAAAAAAAxgs/bBkjtgSdbqsfy2uuW0Cy6nX32bK15zKrgCLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="github login page" data-original-height="408" data-original-width="402" height="400" src="https://lh3.googleusercontent.com/-9dgkaN8grKs/X40kOBd0VzI/AAAAAAAAxgs/bBkjtgSdbqsfy2uuW0Cy6nX32bK15zKrgCLcBGAsYHQ/w393-h400/image.png" width="393" /></a>
+								</div>
+								Setelah semuanya berhasil, maka akan muncul output seperti ini
+								<p></p>
+								<p></p>
+								<div class="separator" style="clear: both; text-align: center;">
+								  <a href="https://lh3.googleusercontent.com/-l84P5nSjWuQ/X40kgeE5tnI/AAAAAAAAxg0/nZr9B_IcWasUH-tAPnZ5rYKIs2ZZbrDvwCLcBGAsYHQ/image.png" style="margin-left: 1em; margin-right: 1em;"><img alt="output berhasil" data-original-height="200" data-original-width="756" height="106" src="https://lh3.googleusercontent.com/-l84P5nSjWuQ/X40kgeE5tnI/AAAAAAAAxg0/nZr9B_IcWasUH-tAPnZ5rYKIs2ZZbrDvwCLcBGAsYHQ/w400-h106/image.png" width="400" /></a>
+								</div>
+								<h2 style="text-align: left;">Selesai</h2>
+								<div>
+								  Yeay.. kamu telah berhasil mengupload program kamu ke github. Program kamu
+								  dapat diakses dengan url berikut
+								</div>
+								<blockquote>
+								  <div>https://github.com/[username]/[nama repository]</div>
+								</blockquote>
+							  </div>
+							</div>
+							<div class="alert alert-danger my-2" role="alert">
+							  Artikel dari <a href="https://blog.nyrat.id" target="_blank">blog.nyrat.id</a><b> (blog saya)</b><br>
+							  <small>&copy; BY Purwa Sabrang Ramadhan 2019 - 2020</small>
+							  
+							</div>
+          				</div>
+          				<div class="col-12 col-md-4 my-2 my-md-0">
+		          			<a href="article-1.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			1
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Cara Upload Program Ke Github Dengan Git di Windows.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+							<a href="article-2.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			2
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Pengertian, cara dan contoh membuat ERD (Entity Relationship Diagram).
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          					<a href="article-3.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			3
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Normalisasi Database Unnormal, 1NF, 2NF dan 3NF.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          					<a href="article-4.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			4
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Belajar cara menggunakan C++ untuk pemula.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          					<a href="article-5.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			5
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Cara Mengaktifkan Dark Mode di Google Chrome Mobile.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          				</div>
+          			</div>
+          		</div>
+          	</section>
+
+        </div>
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white shadow-lg py-3">
+        <div class="container my-auto">
+          <div class="text-center my-auto">
+            <small>&copy; BY <a href="https://instagram.com/the.skinny.rat" target="_blank">Purwa Sabrang Ramadhan</a> 2020 - 
+            	<span class="alert alert-danger p-1">
+            		All Right Reserved
+            	</span>
+            </small>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- NOTE: ALL SCRIPT FOR THIS PAGE -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/js/pages/pages.js"></script>
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/js/index.js"></script>
+
+</body>
+
+</html>

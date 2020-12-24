@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Progress bar loading -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/pace/pace.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/pace/pace.css">
+  <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Selamat Datang di DEV">
+  <meta name="author" content="">
+
+  <title>
+    Article - Dev
+  </title>
+
+  <link rel="icon" href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/img/favicon/rat.png">
+
+  <!-- Custom fonts -->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap styles -->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate on Scroll Plugin -->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/aos/aos.min.css" rel="stylesheet">
+
+  <!-- Custom styles for ALL page-->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/css/index.css" rel="stylesheet">
+
+  <!-- Custom styles for THIS page-->
+  <link href="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/css/pages/main_page.css" rel="stylesheet">
+
+  <!-- NOTE: ALL SCRIPT MOVE HERE FROM BOTTOM -->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Typed.js Plugin -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/typed/typed.min.js"></script>
+
+  <!-- Animate on Scroll Plugin -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/vendor/aos/aos.min.js"></script>
+
+</head>
+
+<body class="p-0" id="page-top">
+
+	<div class="d-none">
+		<h2 style="color: red; text-align: center;">
+			Website ini menggunakan CDN, harap sambungkan ke internet atau server CDN sedang down.
+		</h2>
+	</div>
+
+  <!-- Page Wrapper -->
+  <div id="wrapper" style="display: none;" class="d-block">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column bg-white overflow-hidden">
+
+      <!-- Main Content -->
+      <div id="content">
+
+		<!-- Topbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white topbar h-auto container mb-md-5 pb-md-5">
+		  <div class="">
+		    <a class="navbar-brand d-flex mr-auto text-primary" href="../index.html">
+		      <span class="font-weight-bold mx-1">
+		        <i class="fas fa-code"></i> DEV - Article
+		      </span>
+		    </a>
+		  </div>
+
+		  <div class="topbar-divider d-none d-lg-block"></div>
+
+		  <div class="navbar-text">
+		    
+		    <button class="btn btn-link btn-sm d-lg-none rounded-circle" type="button" data-toggle="collapse" data-target="#navToggler1" aria-controls="navToggler1" aria-expanded="false" aria-label="Toggle navigation">
+		      <i class="fa fa-bars"></i>
+		    </button>
+		  </div>
+
+		  <div class="collapse navbar-collapse" id="navToggler1">
+		    <hr class="d-lg-none m-0">
+		    <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+		      <li class="nav-item p-1 p-lg-0 dropdown">
+		        <a class="btn btn-link text-decoration-none mr-1 btn-sm dropdown-toggle" href="#" id="menu_about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <i class="fas fa-rocket"></i> Apps
+		        </a>
+		        <div class="dropdown-menu keep-open dropdown-menu-right animated--grow-in shadow-sm ml-2 ml-lg-0" aria-labelledby="menu_about">
+		          <a class="dropdown-item" href="app_siup.html">Si UP</a>
+		          <a class="dropdown-item" href="app_waqc.html">WhatsApp Quick Chat</a>
+		        </div>
+		      </li>
+		      <li class="nav-item p-1 p-lg-0">
+		        <a href="doc.html" class="">
+		          <button class="btn btn-link text-decoration-none mr-1 btn-sm" type="button">
+		            <i class="fas fa-book"></i> Documentation
+		          </button>
+		        </a>
+		      </li>
+		      <li class="nav-item p-1 p-lg-0">
+		        <a href="article.html" class="">
+		          <button class="btn btn-link text-decoration-none mr-1 btn-sm" type="button">
+		            <i class="fas fa-newspaper"></i> Article
+		          </button>
+		        </a>
+		      </li>
+		    </ul>
+		  </div>
+
+		</nav>
+
+		<!-- End of Topbar -->
+
+        <div id="place_load" class="container pt-3">
+        	<div class="row">
+          		<div class="col-12 col-md-6">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-row">
+			          			<div class="ph-col-6 big"></div>
+			          			<div class="ph-col-6 big empty"></div>
+			          			<div class="ph-col-4 big"></div>
+			          			<div class="ph-col-8 big empty"></div>
+			          		</div>
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          		<div class="col-12 col-md-6">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+          					<div class="ph-row d-none d-md-block">
+			          			<div class="ph-col-12 big empty"></div>
+			          			<div class="ph-col-12 big empty"></div>
+			          		</div>
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          	</div>
+          	<div class="row d-none d-md-flex">
+          		<div class="col-12 col-md-4">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          		<div class="col-12 col-md-4">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          		<div class="col-12 col-md-4">
+          			<div class="ph-item rounded-lg border-0 shadow-0">
+          				<div class="ph-col-12">
+			          		<div class="ph-picture"></div>
+			          	</div>
+          			</div>
+          		</div>
+          	</div>
+        </div>
+
+        <div id="main_content" style="visibility: hidden;">
+        	<section id="secHeader" class="my-3">
+        		<div class="container">
+        			<div class="row align-items-center">
+	          			<div class="col-12 col-md-6 order-md-2 text-center" data-aos="fade-left" data-aos-delay="100">
+	          				<img class="img-fluid" width="250" src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/img/undraw-svg/data_processing.svg" alt="Documentation illustration">
+	          			</div>
+	          			<div class="col-12 col-md-6 text-center mt-4 mt-md-0" data-aos="fade-right">
+	          				<h1 class="h2 text-md-left pt-3 pt-md-0">
+	          					Normalisasi Database Unnormal, 1NF, 2NF dan 3NF
+	          				</h1>
+	          				<p class="lead text-muted text-md-left">Normalisasi adalah metode pemecahan suatu tabel yang kompleks/rumit menjadi tabel yang sederhana dengan sejumlah aturan.
+	          				</p>
+	          			</div>
+	          		</div>
+        		</div>
+          	</section>
+
+          	<section id="secDesc" class="my-5 py-5 bg-gradient-light-custom">
+          		<div class="container">
+          			<div class="row justify-content-center" data-aos="fade-down">
+          				<div class="col-12 col-md-8">
+          					<div class="card rounded shadow-sm">
+							  <div class="card-body">
+							  	<h2 style="text-align: left;">Pengertian dan Tujuan</h2>
+								<h3 style="text-align: left;">Normalisasi</h3>
+								<div>
+								  <div>
+								    Normalisasi adalah metode pemecahan suatu tabel yang kompleks/rumit menjadi
+								    tabel yang sederhana dengan sejumlah aturan. Normalisasi juga dikenal
+								    sebagai Dekomposisi Tabel.
+								  </div>
+								</div>
+								<h3 style="text-align: left;">Tujuan Normalisasi</h3>
+								<div>
+								  <ul style="text-align: left;">
+								    <li>
+								      Mengurangi data yang redundan (pengulangan baris yang sama pada tabel).
+								    </li>
+								    <li>
+								      Meningkatkan performa dari database dalam segi kapasitas penyimpanan dan
+								      proses I/O.
+								    </li>
+								    <li>meningkatkan waktu yang dibutuhkan dalam menjalankan aktivitas</li>
+								    <li>Meminimasi pengulangan informasi.</li>
+								    <li>Memudahkan identifikasi entiti/obyek.</li>
+								  </ul>
+								  <h3 style="text-align: left;">Jenis Form Normal</h3>
+								</div>
+								<div>
+								  <ul style="text-align: left;">
+								    <li>1NF</li>
+								    <li>2NF</li>
+								    <li>3NF</li>
+								    <li>BCNF</li>
+								  </ul>
+								  <br id="iklan1" />
+								  <h2 style="text-align: left;">Contoh Normalisasi</h2>
+								</div>
+								<h3 style="text-align: left;">Menentukan Topik</h3>
+								<div>
+								  Kali ini Nyrat.ID akan memberikan contoh normalisasi dengan topik tentang
+								  kartu asuransi kecelakaan. Atributnya adalah sebagai berikut:
+								</div>
+								<div>
+								  <ul style="text-align: left;"></ul>
+								  <blockquote>
+								    <ul style="text-align: left;">
+								      <li>Nomor Kartu</li>
+								      <li>Jenis Asuransi</li>
+								      <li>Waktu Berlaku</li>
+								      <li>Waktu Berakhir</li>
+								      <li>Jenis Santunan</li>
+								      <li>Besar Santunan</li>
+								      <li>Kode perusahaan</li>
+								      <li>Nama Perusahaan</li>
+								      <li>Alamat Perusahaan</li>
+								      <li>No Telepon Perusahaan</li>
+								      <li>No Fax Perusahaan</li>
+								    </ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								    <ul style="text-align: left;"></ul>
+								  </blockquote>
+								  <h3 style="text-align: left;">Tabel UnNormal</h3>
+								</div>
+								<div>
+								  Setelah menentukan topik beserta atributnya, sekarang kita masukkan atribut
+								  beserta datanya kedalam tabel unNormal, contohnya adalah sebagai berikut:
+								</div>
+								<div>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a
+								      href="https://lh3.googleusercontent.com/-oJ53V4Nq9wQ/X4mCEa1BJtI/AAAAAAAAxbw/Z3x5wr3f7ZwVw7vV8xD55RimwblKrbILACLcBGAsYHQ/image.png"
+								      style="margin-left: 1em; margin-right: 1em;"
+								      ><img alt="tabel unnormal" data-original-height="361" data-original-width="1374" height="168" src="https://lh3.googleusercontent.com/-oJ53V4Nq9wQ/X4mCEa1BJtI/AAAAAAAAxbw/Z3x5wr3f7ZwVw7vV8xD55RimwblKrbILACLcBGAsYHQ/w640-h168/image.png" width="640"
+								    /></a>
+								  </div>
+								  <h3 style="text-align: left;">Normalisasi 1NF</h3>
+								</div>
+								<div>Syarat untuk normalisasi 1NF adalah:</div>
+								<div>
+								  <ul style="text-align: left;">
+								    <li>Masing-masing baris data hanya boleh memiliki satu record/sel data.</li>
+								    <li>Tidak diperbolehkan ada grouping data ataupun duplikasi data.</li>
+								  </ul>
+								  Bisa dilihat pada tabel unNormal terdapat baris yang memiliki lebih dari satu
+								  record, yaitu baris satu dan dua.
+								</div>
+								<div>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a
+								      href="https://lh3.googleusercontent.com/-tpIv9TpWw1E/X4mHcrtFIPI/AAAAAAAAxb8/GmJjYLzgpZkrujLEkeIVt1Ti5mfH2zOcQCLcBGAsYHQ/image.png"
+								      style="margin-left: 1em; margin-right: 1em;"
+								      ><img alt="proses normalisasi 1NF" data-original-height="365" data-original-width="1380" height="170" src="https://lh3.googleusercontent.com/-tpIv9TpWw1E/X4mHcrtFIPI/AAAAAAAAxb8/GmJjYLzgpZkrujLEkeIVt1Ti5mfH2zOcQCLcBGAsYHQ/w640-h170/image.png" width="640"
+								    /></a>
+								  </div>
+								  Sehingga pada baris tersebut rocord harus dipisah agar setiap baris hanya
+								  mempuyai satu record saja. Setelah dipisah, maka akan jadi seperti ini. Inilah
+								  yang disebut dengan tabel 1NF.
+								</div>
+								<div>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a
+								      href="https://lh3.googleusercontent.com/-cTrFbEfco-s/X4mIF2ecwlI/AAAAAAAAxcE/1jikN3kBY8E-3WAc_5D88An2NegjIQtMQCLcBGAsYHQ/image.png"
+								      style="margin-left: 1em; margin-right: 1em;"
+								      ><img alt="Tabel 1NF" data-original-height="400" data-original-width="1376" height="186" src="https://lh3.googleusercontent.com/-cTrFbEfco-s/X4mIF2ecwlI/AAAAAAAAxcE/1jikN3kBY8E-3WAc_5D88An2NegjIQtMQCLcBGAsYHQ/w640-h186/image.png" width="640"
+								    /></a>
+								  </div>
+								  <h3 style="text-align: left;">Normalisasi 2NF</h3>
+								</div>
+								<div>
+								  <div>Syarat untuk normalisasi 2NF adalah:</div>
+								  <div>
+								    <ul style="text-align: left;">
+								      <li>Tabel dalam keadaan 1 NF.</li>
+								      <li>
+								        Setiap atribut Non-Key memiliki ketergantungan terhadap seluruh Key dan
+								        bukan pada sebagian dari Key saja.
+								      </li>
+								    </ul>
+								    Intinya adalah pada 2NF, isi dari tabel tersebut harus dipecah berdasarkan
+								    primary key. Pertama kita harus menentuka primary key beserta atribut yang
+								    bergantung pada primary key tersebut.
+								    <div class="separator" style="clear: both; text-align: center;">
+								      <a
+								        href="https://lh3.googleusercontent.com/-ke2X6YDjpKQ/X4mJWuk1nyI/AAAAAAAAxcQ/AQXzcFICIdwVAit9m9v1dXmfvD2njoWtwCLcBGAsYHQ/image.png"
+								        style="margin-left: 1em; margin-right: 1em;"
+								        ><img alt="proses normalisasi 2NF" data-original-height="445" data-original-width="1415" height="202" src="https://lh3.googleusercontent.com/-ke2X6YDjpKQ/X4mJWuk1nyI/AAAAAAAAxcQ/AQXzcFICIdwVAit9m9v1dXmfvD2njoWtwCLcBGAsYHQ/w640-h202/image.png" width="640"
+								      /></a>
+								    </div>
+								    Pada tabel di atas terlihat bahwa itu adalah tabel yang sudah
+								    dinormalisasikan pada 1NF tadi, selanjutnya tentukan primary key beserta
+								    atributnya pada tabel tersebut, contohnya adalah:
+								  </div>
+								  <div></div>
+								  <blockquote>
+								    <div><b>Primary key: Nomor kartu</b></div>
+								    <div>Atributnya:</div>
+								    <div>
+								      <ul style="text-align: left;">
+								        <li>Waktu berlaku</li>
+								        <li>Waktu berakhir</li>
+								        <li>Jenis asuransi</li>
+								      </ul>
+								    </div>
+								  </blockquote>
+								  <div></div>
+								  <blockquote>
+								    <div><b>Primary key: Kode perusahaan</b></div>
+								    <div>Atributnya:</div>
+								    <div>
+								      <ul style="text-align: left;">
+								        <li>Nama perusahaan</li>
+								        <li>Alamat perusahaan</li>
+								        <li>No telepon perusahaan</li>
+								        <li>No fax perusahaan</li>
+								      </ul>
+								    </div>
+								  </blockquote>
+								  <p>
+								    Selanjutnya dua primary key beserta atributnya diatas kita pisah menjadi
+								    tabel baru, sehingga menjadi seperti ini
+								  </p>
+								  <p></p>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a
+								      href="https://lh3.googleusercontent.com/-6oduwkeLzYw/X4mLUaYQ2vI/AAAAAAAAxcc/-kvZCKZ_IMc2ePiba9cIzAZBNEukYbOYACLcBGAsYHQ/image.png"
+								      style="margin-left: 1em; margin-right: 1em;"
+								      ><img alt="tabel-tabel 2nf yang masih redundan" data-original-height="864" data-original-width="1334" height="414" src="https://lh3.googleusercontent.com/-6oduwkeLzYw/X4mLUaYQ2vI/AAAAAAAAxcc/-kvZCKZ_IMc2ePiba9cIzAZBNEukYbOYACLcBGAsYHQ/w640-h414/image.png" width="640"
+								    /></a>
+								  </div>
+								  Selanjutnya kita hapus data yang duplikat atau redundan pada setiap tabel,
+								  sehingga menjadi seperti ini, inilah yang dinamakan dengan normalisasi 2nf.
+								  <p></p>
+								  <p></p>
+								  <div class="separator" style="clear: both; text-align: center;">
+								    <a
+								      href="https://lh3.googleusercontent.com/-LFwuvr-N3NM/X4mLyKwxrqI/AAAAAAAAxck/5yaSGNLrPrg3gf7b52szDNdyhoNrju1rQCLcBGAsYHQ/image.png"
+								      style="margin-left: 1em; margin-right: 1em;"
+								      ><img alt="tabel-tabel 2nf" data-original-height="875" data-original-width="1350" height="414" src="https://lh3.googleusercontent.com/-LFwuvr-N3NM/X4mLyKwxrqI/AAAAAAAAxck/5yaSGNLrPrg3gf7b52szDNdyhoNrju1rQCLcBGAsYHQ/w640-h414/image.png" width="640"
+								    /></a>
+								  </div>
+								  <br id="iklan2" />
+								  <h3 style="text-align: left;">Normalisasi 3NF</h3>
+								  <div>
+								    <div
+								      style='-webkit-text-stroke-width: 0px; color: black; font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;'
+								    >
+								      <ul style="text-align: left;"></ul>
+								    </div>
+								  </div>
+								  <p></p>
+								  <div
+								    style='-webkit-text-stroke-width: 0px; color: black; font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;'
+								  >
+								    Syarat untuk normalisasi 3NF adalah:
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    <ul style="text-align: left;">
+								      <li>Tabel dalam keadaan 2 NF.</li>
+								      <li>Setiap atribut Non-Key harus bergantung kepada Key-nya.</li>
+								    </ul>
+								    Intinya adalah pada 3NF ini, jika terdapat suatu atribut yang tidak
+								    bergantung pada primary key tapi bergantung pada field yang lain maka
+								    atribut-atribut tersebut perlu dipisah ke tabel baru.
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    <div class="separator" style="clear: both; text-align: center;">
+								      <a
+								        href="https://lh3.googleusercontent.com/-KaJrU10053w/X4mRUqwo7zI/AAAAAAAAxcw/tiMS0MteYrsDhAF-fMbE8xsozzge273ygCLcBGAsYHQ/image.png"
+								        style="margin-left: 1em; margin-right: 1em;"
+								        ><img alt="proses normalisasi 3nf" data-original-height="869" data-original-width="1293" height="430" src="https://lh3.googleusercontent.com/-KaJrU10053w/X4mRUqwo7zI/AAAAAAAAxcw/tiMS0MteYrsDhAF-fMbE8xsozzge273ygCLcBGAsYHQ/w640-h430/image.png" width="640"
+								      /></a>
+								    </div>
+								    Contohnya adalah pada tabel-tabel di atas yang sudah kita normalisasikan
+								    menjadi 2NF, terlihat bahwa pada <b>tabel asuransi</b> masih memiliki
+								    atribut yang bergantung pada field lain. Yaitu atribut
+								    <b>Besar Santunan</b> masih memiliki ketergantungan pada atribut
+								    <b>Jenis Santunan,</b>&nbsp;maka atribut tersebut harus dipisah menjadi
+								    tabel baru dan hilangkan data yang duplikat atau redundan.
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    <div class="separator" style="clear: both; text-align: center;">
+								      <a
+								        href="https://lh3.googleusercontent.com/-ELTMyBhizes/X4mSNCBePtI/AAAAAAAAxc4/M3CVnDpwKvsXlwKfDMVe0vksbqWSrsznQCLcBGAsYHQ/image.png"
+								        style="margin-left: 1em; margin-right: 1em;"
+								        ><img alt="hasil normalisasi 3nf" data-original-height="301" data-original-width="730" height="264" src="https://lh3.googleusercontent.com/-ELTMyBhizes/X4mSNCBePtI/AAAAAAAAxc4/M3CVnDpwKvsXlwKfDMVe0vksbqWSrsznQCLcBGAsYHQ/w640-h264/image.png" width="640"
+								      /></a>
+								    </div>
+								    Setelah normalisasi 3NF, jika data masih belum normal dan masih terjadi
+								    anomali, maka dapat dilanjutkan ke normalisasi Boyce-Codd (BCNF).
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    <br />
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    Normalisasi BCNF hanya dibutuhkan jika pada 3NF masih terjadi anomali pada
+								    perubahan/penghapusan data. Namun pada contoh kali ini, cukup pada 3NF saja.
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    <br />
+								  </div>
+								  <div
+								    style="orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; widows: 2;"
+								  >
+								    Bagaimana? sudah mengerti cara untuk menormalisasikan data / database? Jika
+								    ada kesalahan, jangan sungkan untuk mengkoreksi di kolom komentar ya...
+								  </div>
+								</div>
+
+
+							  </div>
+							</div>
+							<div class="alert alert-danger my-2" role="alert">
+							  Artikel dari <a href="https://blog.nyrat.id" target="_blank">blog.nyrat.id</a><b> (blog saya)</b><br>
+							  <small>&copy; BY Purwa Sabrang Ramadhan 2019 - 2020</small>
+							  
+							</div>
+          				</div>
+          				<div class="col-12 col-md-4 my-2 my-md-0">
+		          			<a href="article-1.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			1
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Cara Upload Program Ke Github Dengan Git di Windows.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+							<a href="article-2.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			2
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Pengertian, cara dan contoh membuat ERD (Entity Relationship Diagram).
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          					<a href="article-3.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			3
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Normalisasi Database Unnormal, 1NF, 2NF dan 3NF.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          					<a href="article-4.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			4
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Belajar cara menggunakan C++ untuk pemula.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          					<a href="article-5.html" class="text-dark">
+          						<div class="card rounded shadow-sm">
+								  <div class="card-body">
+								  	<div class="row align-items-center">
+								  		<div class="col-2 text-center h4 p-0">
+								  			5
+								  		</div>
+								  		<div class="col-10 p-0">
+								  			Cara Mengaktifkan Dark Mode di Google Chrome Mobile.
+								  		</div>
+								  	</div>
+								  </div>
+								</div>
+          					</a>
+          				</div>
+          			</div>
+          		</div>
+          	</section>
+
+        </div>
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white shadow-lg py-3">
+        <div class="container my-auto">
+          <div class="text-center my-auto">
+            <small>&copy; BY <a href="https://instagram.com/the.skinny.rat" target="_blank">Purwa Sabrang Ramadhan</a> 2020 - 
+            	<span class="alert alert-danger p-1">
+            		All Right Reserved
+            	</span>
+            </small>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- NOTE: ALL SCRIPT FOR THIS PAGE -->
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/js/pages/pages.js"></script>
+  <script src="https://cdn.nyrat.id/temp/dw/uas/assets/frontend/js/index.js"></script>
+
+</body>
+
+</html>
